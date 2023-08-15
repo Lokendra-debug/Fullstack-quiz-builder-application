@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#jadu{
+    background: rgb(0,0,0,0.6);
+    height: 99.99%;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 99.50%;
+    margin: 0;
+}
+.mainQuiz {
+    min-height: 60%;
+    background-color: white;
+    width: 660px;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.mainQuiz>div>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainQuiz>div>.quizOptions {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px 20px;
+    grid-template-rows: repeat(4, 50px);
+}
+
+.quizOptions button {
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border: none;
+    padding: 10px 20px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+}
+
+.quizOptions button:hover {
+    border: 1px solid rgb(202, 200, 200);
+    background-color: white;
+    font-size: larger;
+
+}
+
+.mainQuiz .btns {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.mainQuiz .btns>button {
+    font-size: larger;
+    padding: 8px 10px 10px 10px;
+    width: 150px;
+    border: 1px solid rgb(41, 41, 173);
+    background-color: rgb(38, 38, 150);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.mainQuiz .btns>button:hover {
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+}
+#jadu > h3{
+    text-align: center;
+}
+.quizqustions{
+    margin-top: 20px;
+    border-top: 1px solid rgb(172, 172, 176);
+}
+.quizqustions > div:first-child h3{
+    margin-bottom: 0;
+    font-size: larger;
+}

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  width: 400px;
+  padding: 25px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  background-color: rgb(36, 117, 193);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  font-size: larger;
+  font-weight: 500;
+}
+
+input {
+  font-size: larger;
+  height: 35px;
+}
+
+input:focus {
+  border: none;
+}
+
+h1{
+  margin: 5px auto;
+}
+#btns{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2px;
+  margin-bottom: 0;
+}
+
+#btns > button{
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  font-size: larger;
+  font-weight: 600;
+  border-bottom: 1px solid blue;
+  background-color: white;
+}
+
+#btns>button:nth-child(2){
+  color: white;
+  background-color: blue;
+}
+
+#hh{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 0;
+}
+
+#hh> input,
+#hh > p{
+  margin: 0;
+  margin-right: 10px;
+}
+
+#hh> input{
+  cursor: pointer;
+  width: 15px;
+}

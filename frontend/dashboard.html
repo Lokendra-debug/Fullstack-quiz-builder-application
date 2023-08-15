@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+   <nav>
+    <div>
+        <h2>Quick Quizzer</h2>
+    </div>
+    <div>
+        <p> Welcome 🎉 <span id="username"></span></p>
+    </div>
+    <div>
+        <button id="logout" onclick="logout()">Logout</button>
+    </div>
+   </nav>
+   <div class="createQuiz">
+        <button id="createQuiz">Create Quiz</button>
+   </div>
+   <div id="mainCont" >
+        <!-- all quizes here -->
+   </div>
+   <span id="heading"></span>
+<div id="popup">
+    <div id="mainForm">
+        <div>
+            <div>
+                <p>Quiz title:   </p>
+                <input type="text" id="quiztitle" placeholder="Enter Quiz title">
+            </div>
+            <div>
+                <p>Quiz description:   </p>
+                <input type="text" id="quizdescription" placeholder="Enter Quiz description">
+            </div>
+            <div> 
+                <p>Total Questions : <span id="totalquestionCount">0</span>/10</p>
+                <div></div>
+                <button id="CancelCreate">Cancel</button>
+            </div>
+           </div>
+       
+    
+       <form id="quesCard">
+        <div class="mainquestion"><p >Question : <span id="questioncount"></span> </p> <input type="text" id="questiontitle" placeholder="Enter Question"></div>
+        <div class="questions">
+            <div><p>Option : 1</p> <input type="text" placeholder="Enter Option" id="ans1"></div>
+            <div><p>Option : 2</p> <input type="text" placeholder="Enter Option" id="ans2"></div>
+            <div><p>Option : 3</p> <input type="text" placeholder="Enter Option" id="ans3"></div>
+            <div><p>Option : 4</p> <input type="text" placeholder="Enter Option" id="ans4"></div>
+        </div>
+        <div class="correctOpt">
+            <p class="optionInfo">Which of the options are correct? </p>
+            <div class="CorrectOptions">
+                <div>
+                    <p> Option : 1 - </p> 
+                    <input type="checkbox" data-id="1">
+                </div>
+                <div>
+                    <p>Option : 2 -  </p>
+                    <input type="checkbox" data-id="2">
+                </div>
+                <div>
+                    <p> Option : 3 - </p>
+                    <input type="checkbox" data-id="3">
+                </div>
+                <div>
+                    <p> Option : 4 -  </p>
+                    <input type="checkbox" data-id="4">
+                </div>
+            </div>
+        </div>
+        <div class="btns-add-submit">
+            <button id="AddQuestionBtn">Add Question</button>
+            <button id="submitQuizBtn">SUBMIT</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+<div id="editPopup" >
+    <div id="mainForm">
+        <div>
+            <div>
+                <p>Quiz title:   </p>
+                <input type="text" id="quiztitle" placeholder="Enter Quiz title">
+            </div>
+            <div>
+                <p>Quiz description:   </p>
+                <input type="text" id="quizdescription" placeholder="Enter Quiz description">
+            </div>
+            <div> 
+                <p>Total Questions : <span id="totalquestionCount">0</span></p>
+                <div></div>
+                <button id="CancelCreate">Cancel</button>
+            </div>
+           </div>
+       
+    
+       <form id="quesCard">
+        <div class="mainquestion"><p >Question : <span id="questioncount"></span> </p> <input type="text" id="questiontitle" placeholder="Enter Question"></div>
+        <div class="questions">
+            <div><p>Option : 1</p> <input type="text" placeholder="Enter Option" id="ans1"></div>
+            <div><p>Option : 2</p> <input type="text" placeholder="Enter Option" id="ans2"></div>
+            <div><p>Option : 3</p> <input type="text" placeholder="Enter Option" id="ans3"></div>
+            <div><p>Option : 4</p> <input type="text" placeholder="Enter Option" id="ans4"></div>
+        </div>
+        <div class="correctOpt">
+            <p class="optionInfo">Which of the options are correct? </p>
+            <div class="CorrectOptions">
+                <div>
+                    <p> Option : 1 - </p> 
+                    <input type="checkbox" id="1">
+                </div>
+                <div>
+                    <p>Option : 2 -  </p>
+                    <input type="checkbox" id="2">
+                </div>
+                <div>
+                    <p> Option : 3 - </p>
+                    <input type="checkbox" id="3">
+                </div>
+                <div>
+                    <p> Option : 4 -  </p>
+                    <input type="checkbox" id="4">
+                </div>
+            </div>
+        </div>
+        <div class="btns-add-submit">
+            <button id="previous">Previous</button>
+            <button id="next">Next</button>
+        </div>
+        <div class="saveBtn"><button id="savebtn">Save Changes</button></div>
+    </form>
+    </div>
+</div>
+</body>
+<script src="./js/dashboard.js"></script>
+</html>
