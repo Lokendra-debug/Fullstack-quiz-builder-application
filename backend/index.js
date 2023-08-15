@@ -11,6 +11,7 @@ app.use(cors())
 
 app.use("/", router)
 
+
 app.get('/home', async(req, res)=>{
     let users = await User.find()
     console.log(users)
