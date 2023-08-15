@@ -1,7 +1,7 @@
 const user = JSON.parse(sessionStorage.getItem("user"));
 if (!user) location.replace("./index.html");
 
-const url = `https://quiz-server-27y4.onrender.com`;
+const url = `https://quiz-builder-backend-wwgj.onrender.com`;
 
 let params = new URLSearchParams(window.location.search);
 let quizID = params.get("quiz");

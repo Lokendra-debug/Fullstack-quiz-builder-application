@@ -1,5 +1,4 @@
 sessionStorage.clear();
-
 let isregister = false;
 let form = document.querySelector("form");
 let rb = document.getElementById("rb");
@@ -13,7 +12,7 @@ let email = document.querySelector("#email")
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (isregister) {
-    fetch("https://quiz-server-27y4.onrender.com/user/register", {
+    fetch("https://quiz-builder-backend-wwgj.onrender.com/user/register", {
       method: "POST",
       body: JSON.stringify({ email : email.value, password : password.value}),
       headers: {
@@ -36,7 +35,7 @@ form.addEventListener("submit", (e) => {
       });
   }
   else {
-    fetch("https://quiz-server-27y4.onrender.com/user/login", {
+    fetch("https://quiz-builder-backend-wwgj.onrender.com/user/login", {
       method: "POST",
       body: JSON.stringify({email : email.value, password : password.value}),
       headers: {

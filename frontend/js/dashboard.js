@@ -1,4 +1,4 @@
-const url = "https://quiz-server-27y4.onrender.com";
+const url = "https://quiz-builder-backend-wwgj.onrender.com";
 
 const user = JSON.parse(sessionStorage.getItem("user"));
 if (!user) location.replace("./index.html");
