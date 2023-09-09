@@ -4,15 +4,29 @@
 }
 
 body {
-  height: 90vh;
+  background-image: url('../images/quizimage.jpg');
+  background-size: cover; /* Adjust this property as needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Optional: Make the div take up the full viewport height */
+}
+
+#heading{
+  font-size: 60px;
+  color: red;
+  background-color: white;
 }
 
 form {
   display: grid;
+  background-color: teal;
   width: 400px;
   padding: 25px;
   grid-template-columns: repeat(1, 1fr);
@@ -85,4 +99,36 @@ h1{
 #hh> input{
   cursor: pointer;
   width: 15px;
+}
+
+/* Media query for screens smaller than 576px (e.g., smartphones) */
+@media (max-width: 575px) {
+  #heading {
+    font-size: 30px;
+    
+  }
+}
+
+/* Media query for screens between 576px and 992px (e.g., tablets) */
+@media (min-width: 576px) and (max-width: 991px) {
+  #heading {
+    font-size: 40px;
+    
+  }
+}
+
+/* Media query for screens between 992px and 1200px (e.g., larger tablets and small laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #heading {
+    font-size: 50px;
+    
+  }
+}
+
+/* Media query for screens larger than 1200px (e.g., desktops) */
+@media (min-width: 1200px) {
+  #heading {
+    font-size: 60px;
+    
+  }
 }
