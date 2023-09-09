@@ -12,7 +12,7 @@ let email = document.querySelector("#email")
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (isregister) {
-    fetch("https://quiz-builder-backend-wwgj.onrender.com/user/register", {
+    fetch("https://quiz-backend-lokendra-debug.vercel.app/user/register", {
       method: "POST",
       body: JSON.stringify({ email : email.value, password : password.value}),
       headers: {
@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
       });
   }
   else {
-    fetch("https://quiz-builder-backend-wwgj.onrender.com/user/login", {
+    fetch("https://quiz-backend-lokendra-debug.vercel.app/user/login", {
       method: "POST",
       body: JSON.stringify({email : email.value, password : password.value}),
       headers: {

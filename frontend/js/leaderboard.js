@@ -6,7 +6,7 @@ let params = new URLSearchParams(window.location.search);
 let quizID = params.get("quiz");
 
 function getdata() {
-  fetch("hhttps://quiz-builder-backend-wwgj.onrender.com/getleaderboard/" + quizID)
+  fetch("https://quiz-backend-lokendra-debug.vercel.app/getleaderboard/" + quizID)
     .then((res) => res.json())
     .then((data) => {
       if (data.isOk || data.isOK) {
