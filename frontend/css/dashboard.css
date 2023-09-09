@@ -1,37 +1,31 @@
 *{
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-nav{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    border-bottom: 1px solid rgb(171, 168, 168);
-    align-items: center;
-    padding-left:25px;
-    padding-right: 30px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    margin: 0px;
 }
 
-nav > div > h2{
-    font-size:xx-large;
-    margin: 0;
-    cursor:grab;
-}
-nav > div > p{
-    font-size: larger;
-    text-align: center;
-}
-nav > div:nth-child(4){
-    text-align: end;
-}
-nav > div:nth-child(3){
+body {
+    background-image: url('../images/quizimage.jpg');
+    background-size: cover; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 1000px;
+  }
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0px;
     display: flex;
-    justify-content: end;
-    font-size: large;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:teal;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
 }
+
 nav > div > button{
-    width: 180px;
     color: rgb(240, 92, 92);
     border: none;
     background-color: white;
@@ -46,7 +40,7 @@ nav > div > button{
     display: flex;
     justify-content: end;
     padding: 0px 35px;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 #createQuiz{
@@ -82,7 +76,6 @@ nav  > div > button:hover {
     display: grid;
     grid-template-columns: repeat(4,435px);
     gap: 40px;
-    /* grid-template-rows: 370px; */
 }
 
 .qcard{

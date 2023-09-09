@@ -3,6 +3,13 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+    background-image: url('../images/quizimage.jpg');
+    background-size: cover; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+
 #jadu{
     background: rgb(0,0,0,0.6);
     height: 99.99%;
