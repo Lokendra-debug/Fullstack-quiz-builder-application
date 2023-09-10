@@ -74,7 +74,7 @@ nav  > div > button:hover {
     padding: 20px;
     margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(4,435px);
+    grid-template-columns: repeat(3,1fr);
     gap: 40px;
 }
 
@@ -82,6 +82,7 @@ nav  > div > button:hover {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     padding:40px 25px 30px 25px;
     text-align: center;
+    background-color: white;
 }
 .nbold{
     font-size: larger;
@@ -339,3 +340,21 @@ input{
     border: 2px solid rgb(239, 35, 110);
     background-color: rgb(239, 35, 110);
 }
+
+@media screen and (max-width: 767px) {
+    #mainCont{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Your tablet-specific CSS rules here */
+    #mainCont{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+  }
+
+  
+  
+  
