@@ -346,10 +346,110 @@ input{
         grid-template-columns: repeat(1,1fr);
     }
 
-    #popup,
-    #editPopup {
+    .correctOpt {
+        display: block;
+        margin-top: 10px;
+        gap: 10px;
+      }
+    
+      .CorrectOptions {
+        display: block;
+      }
+    
+      .CorrectOptions > div {
+        display: block;
+        font-size: medium;
+      }
+    
+      .CorrectOptions > div > input {
+        width: auto;
+        margin: 5px 0;
+      }
+    
+      .CorrectOptions > div > p {
+        margin: 5px 0;
+      }
+    
+      .questions {
+        display: block;
+        margin-top: 10px;
+      }
+    
+      .questions > div {
+        display: block;
+      }
+    
+      .questions > div > p {
+        margin-right: 0;
+      }
+    
+      #quesCard {
         width: 100%;
-    }
+      }
+    
+      input {
+        width: 100%;
+      }
+    
+      .mainquestion {
+        grid-template-columns: 1fr;
+      }
+    
+      .mainquestion > input {
+        width: 100%;
+      }
+    
+      .btns-add-submit {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    
+      .btns-add-submit > button:nth-child(1) {
+        margin-top: 10px;
+      }
+    
+      .btns-add-submit > button:nth-child(2) {
+        margin-top: 10px;
+      }
+    
+      #mainForm {
+        width: 100%;
+        margin-top: 5%;
+      }
+    
+      #mainForm > div:first-child > div {
+        grid-template-columns: 1fr;
+      }
+    
+      #mainForm > div:first-child > div > input {
+        width: 100%;
+      }
+    
+      #mainForm > div:first-child > div:nth-child(3) {
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        grid-template-rows: auto;
+      }
+    
+      #CancelCreate {
+        margin-top: 10px;
+      }
+    
+      .saveBtn {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      #savebtn {
+        width: 100%;
+        margin-top: 10px;
+      }
+    
+      #editPopup {
+        width: 100%;
+      }
+
+    
   }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -359,7 +459,3 @@ input{
     }
     
   }
-
-  
-  
-  
